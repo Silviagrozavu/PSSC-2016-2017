@@ -14,6 +14,8 @@ namespace Models.Subject
         public SubjectInformation SubjectInfo { get; internal set; }
 
         private Dictionary<Student.Student, SubjectSituation> _signedUpStudentsGrades;
+        internal Guid GetId;
+
         public Dictionary<Student.Student, SubjectSituation> SignedUpStudentsGrades { get { return _signedUpStudentsGrades; } }
 
         public Subject()
